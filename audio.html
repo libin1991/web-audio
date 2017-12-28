@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>audio page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body,html {
+                margin: 0;
+                padding: 0;
+            }
+            .canvas_container {
+                text-align: center;
+            }
+            canvas {
+                background-color: black;
+            }
+            .audio_container {
+                text-align: center;  
+            }
+        </style>
+    </head>
+    <body>
+        <div class="canvas_container">
+            <canvas id="canvas" width="800" height="400">您的浏览器不支持canvas</canvas>
+        </div>
+        <div class="audio_container">
+            <audio id="audio" src="./crave.mp3" width="300" height="300" controls="controls">
+                你的浏览器不支持audio
+            </audio>
+            <button onclick="switchMode()">switch mode</button>
+        </div>        
+        <script src="./audio-graph.js">
+        </script>
+    </body>
+</html>
